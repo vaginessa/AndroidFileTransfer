@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <TextView android:id="@+id/textIPaddr"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+    	android:layout_height="80dp">
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="打开文件" 
+	        android:layout_weight="1"
+	        android:id="@+id/buttonOpen"/>
+	
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="发送" 
+	        android:layout_weight="1"
+	        android:id="@+id/buttonSent"/>
+		    
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="画板" 
+	        android:layout_weight="1"
+	        android:id="@+id/buttonPaint"/>
+	    
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="控制鼠标" 
+	        android:layout_weight="1"
+	        android:id="@+id/buttonControlMouse"/>
+    </LinearLayout>
+   
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextfile"/>
+        
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarFile"/>
+    
+    <TextView 
+        android:id="@+id/textInfo"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" />
+</LinearLayout>
